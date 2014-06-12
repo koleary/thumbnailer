@@ -22,12 +22,15 @@ div {
 	border-bottom: 3px solid #fff;
 }
 
+.row-4 span {
+	line-height: 60px;
+}
 .fill-3 { 
-	line-height: 45px;
+	line-height: 30px;
 	color:#777;
 }
 .fill-4 { 
-	line-height: 34px;
+	line-height: 30px;
 	color:#777;
 }
 .fill-5 { 
