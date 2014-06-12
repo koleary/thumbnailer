@@ -14,6 +14,7 @@ div {
 	height: 140px;
 	margin-right: 1em;
 	overflow: hidden;
+	background: #777;
 }
 .thumb_region {
 	float: left;
@@ -54,7 +55,7 @@ div {
  	height: 16.65%;
  }
  .stack-7-0 .full {
- 	height: 14.25%;
+ 	height: 14.28%;
  }
  .stack-8-0 .full {
  	height: 12.5%;
@@ -69,10 +70,10 @@ div {
 	height: 20%;
 }
 .stack-3-2 .full {
-	height: 12.5%;
+	height: 14.28%;
 }
 .stack-4-1 .full {
-	height: 14.25%;
+	height: 14.28%;
 }
 
 /* row stack classes */
@@ -99,7 +100,7 @@ div {
 	height: 16.65%;
 }
 .stack-0-7 .row {
-	height: 14.25%;
+	height: 14.28%;
 }
 .stack-0-8 .row {
 	height: 12.5%;
@@ -117,7 +118,7 @@ div {
 	height: 16.65%;
 }
 .stack-1-5 .row {
-	height: 14.25%;
+	height: 14.28%;
 }
 .stack-1-6 .row {
 	height: 12.5%;
@@ -129,7 +130,7 @@ div {
 	height: 40%;
 }
 .stack-3-2 .row {
-	height: 24%;
+	height: 29%;
 }
 .stack-4-1 .row {
 	height: 44%;
