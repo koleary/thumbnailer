@@ -1,0 +1,55 @@
+
+div {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+}
+.container {
+	width: 100%;
+	text-align: center;
+	margin: 1em;
+}
+#thumbnail_container {
+	float: left;
+	width: 100px;
+	height: 140px;
+	margin-right: 1em;
+	overflow: hidden;
+}
+.thumb_region {
+	float: left;
+	background-color: #777;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+
+.fill-3 { 
+	line-height: 45px;
+	color:#777;
+}
+.fill-4 { 
+	line-height: 34px;
+	color:#777;
+}
+.fill-5 { 
+	line-height: 25px;
+	color:#777;
+}
+
+.full {
+	width: 100%;
+}
+.half {
+	width: 50%;
+}
+.one_quarter {
+	width: 25%;
+}
+.three_quarter {
+	width: 75%;
+}
+.one_eighth {
+	width: 12.5%;
+}
+
+
+
