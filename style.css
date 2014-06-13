@@ -1,26 +1,112 @@
 
-div {
+/* for prototype only */
+
+#container {
+	width: 100%;
+	margin: 30px;
+}
+body {
+	font-size: 14px;
+	font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+	color: #333;
+}
+
+/* administrative layout css */
+
+#admin-layout {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+	float: left;
+	width: 70%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 }
-.container {
-	width: 100%;
-	text-align: center;
-	margin: 1em;
+.admin-region {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+	float: left;
+	padding: .5em;
 }
-#thumbnail_container {
+#admin-layout .admin-region {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+	background: #f5f5f5;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	height: 90px;
+}
+#admin-layout .row .admin-region {
+	height: 140px;
+}
+.admin-region h1 {
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* layout thumbnail css */
+
+#admin-thumb {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox 28 and earlier*/
 	float: left;
 	width: 100px;
 	height: 140px;
 	margin-right: 1em;
 	overflow: hidden;
-	background: #777;
 }
-.thumb_region {
-	float: left;
-	background-color: #777;
+#admin-thumb .admin-region {
+	background: #777;
 	border-right: 3px solid #fff;
 	border-bottom: 3px solid #fff;
+	padding: 0;
+}
+.row {
+	float: left;
+	width: 100%;
+}
+
+/* row classes. Classes from different groups will not add up to 100% */
+
+/* twos group. */
+.half { width: 50%; }
+.quarter { width: 25%; }
+.three-quarter { width: 75%; }
+.eighth { width: 12.5%; }
+.three-eighth { width: 37.5%; }
+.five-eighth { width: 62.5%; }
+.seven-eighth { width: 87.5%; }
+
+/* threes group. */
+.ninth { width: 11.11%; }
+.sixth { width: 16.665%; }
+.two-ninth { width: 22.22%; }
+.third { width: 33.33%; }
+.four-ninth { width: 44.44%; }
+.five-ninth { width: 55.55%; }
+.two-third { width: 66.66%; }
+.five-sixth { width: 83.325%; }
+.eight-ninth { width: 88.88%; }
+
+/* fifths group. */
+.fifth { width: 20%; }
+.two-fifth { width: 40%; }
+.three-fifth { width: 60%; }
+.four-fifth { width: 80%; }
+
+/* sevenths group. */
+
+/* resets height since parent (.row) height is greater than .full */
+#admin-thumb .row .admin-region { 
+	height: 100%;
+}
+#admin-thumb .row .admin-region .admin-region { 
+	height: 50%;
+	border-right: 0;
+}
+#admin-thumb .row .admin-region .admin-region:last-child { 
+	border-bottom: 0;
 }
 
 /* Stack classes. Calculated based on full height of 140px. 
@@ -29,7 +115,7 @@ div {
    The number for full regions precedes the number for rows so a layout with 2 regions and a row gets a class of "stack-2-1".
    I have then calculated the heights (not all yet) based on the number of regions plus double the number of rows divided by 100.
    Please, please please someone find a way to do this with calculation. :)
- */
+*/
 
 .full {
 	width: 100%;
@@ -52,7 +138,7 @@ div {
  	height: 20%;
  }
  .stack-6-0 .full {
- 	height: 16.65%;
+ 	height: 16.665%;
  }
  .stack-7-0 .full {
  	height: 14.28%;
@@ -97,7 +183,7 @@ div {
 	height: 20%;
 }
 .stack-0-6 .row {
-	height: 16.65%;
+	height: 16.99%;
 }
 .stack-0-7 .row {
 	height: 14.28%;
@@ -134,37 +220,6 @@ div {
 }
 .stack-4-1 .row {
 	height: 44%;
-}
-
-/* row classes */
-
-.row {
-	float: left;
-	width: 100%;
-}
-.row div {
-	height: 100%;
-}
-.half {
-	width: 50%;
-}
-.quarter {
-	width: 25%;
-}
-.three-quarter {
-	width: 75%;
-}
-.eighth {
-	width: 12.5%;
-}
-.three-eighth {
-	width: 37.5%;
-}
-.five-eighth {
-	width: 62.5%;
-}
-.seven-eighth {
-	width: 87.5%;
 }
 
 
