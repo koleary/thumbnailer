@@ -1,0 +1,36 @@
+
+/* admin-layout css. This is the css used in the page manager when "view layout" is toggled on. */
+
+#admin-layout .admin-region {
+  padding: .5em;
+  margin: 0;
+  background: #f8f7f5;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#admin-layout .region-container {
+  padding: .5em 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+#admin-layout .region-container-container {
+  padding: .5em 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.admin-block {
+  display: none;
+}
+#admin-layout .admin-region .empty-region-message { 
+  display: none;
+}
+
+
+
+
+
+
+
+
+
