@@ -1,0 +1,135 @@
+
+/* Prototype only throw-away css. This applies to the thumbnail_2.html and admin_layout.html demo files. */
+
+/* page */
+body {
+	font-size: 14px;
+	font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+	color: #333;
+	padding: 2em;
+}
+.block-list-placeholder {
+	width: 18%;
+	background: #eee;
+	float: right;
+	padding: .25em;
+	height: 400px;
+}
+.block-list-placeholder h1 {
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 .5em;
+  color: #777;
+}
+
+
+/*  Layout [a representation of attributes that will be programmatically added to the region and block css.]
+	Applies to both layout and thumbnails since they both use percentage widths. */
+#admin-layout {
+  height: 510px;
+}
+#header {
+	width: 100%;
+}
+#header_2 {
+	width: 100%;
+}
+#footer {
+	width: 100%;
+}
+#content {
+	width: 100%;
+}
+#content_2 {
+	width: 100%;
+}
+#content_3 {
+	width: 100%;
+}
+div#region-container-1 {
+	width: 100%;
+}
+div#region-container-2 {
+	width: 70%;
+	height: 100%;
+}
+div#region-container-3 {
+	width: 30%;	
+	float: right;
+}
+div#region-container-2 .admin-region {
+	height: 250px;
+}
+div#region-container-2 .admin-block {
+	height: 107px;
+}
+div#region-container-3 .admin-region {
+	height: 100%;
+}
+
+/* blocks */
+#header .admin-block  {
+	width: 25%;
+}
+#content .admin-block,
+#content_2 .admin-block,
+#content_3 .admin-block {
+	width: 100%;
+}
+#footer .admin-block {
+	width: 50%;
+}
+
+/* thumbnails */
+div.admin-thumb .admin-region {
+	height: 20%;
+}
+div.admin-thumb .region-container {
+	height: 100%;
+}
+div.admin-thumb #region-container-3 {
+	height: 50%;
+}
+div.admin-thumb .region-container-container {
+	height: 40%;
+}
+
+@media all and (max-width: 800px) {
+    div#region-container-2,
+    div#region-container-3 {
+    	width: 50%;
+    }  
+    .block-list-placeholder {
+		width: 100%;
+	}
+	#admin-layout {
+	  height: auto;
+	}
+}
+@media all and (max-width: 600px) {
+	body {
+		padding: 1em;
+	}
+    div#region-container-2,
+    div#region-container-3, 
+    #header .admin-block,
+    #footer .admin-block  {
+    	width: 100%;
+    }
+    #admin-layout .region-container {
+    	padding-right: 0;
+    }
+    div#region-container-2 .admin-block {
+    	height: auto;
+    }
+    div#region-container-2 .admin-region {
+		height: 100%;
+	}
+}
+
+
+
+
+
+

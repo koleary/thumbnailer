@@ -17,25 +17,21 @@
 
 /* admin-layout css. This is the css used in the page manager. */
 #admin-layout {
-  width: 70%;
-  height: 1000px;
+  width: 80%;
+  height: 510px;
+  border-top: 1px solid #ccc;
 }
 #admin-layout .admin-region {
-  padding: .5em;
+  padding: .5em 0;
   min-height: 50px;
-  outline: 1px solid #ddd;
-}
-#admin-layout .admin-region {
-  background: #f8f7f5;
-}
-#admin-layout .admin-region {
-  margin: .5em 0 0;
+  border-bottom: 1px solid #ccc;
 }
 #admin-layout .admin-region h1 { /* replace with attributes from the table head class */
   font-size: 11px;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0 0 .5em;
+  color: #777;
 }
 #admin-layout .admin-region p { /* replace with attributes from block UI */
   font-size: 11px;
@@ -44,12 +40,18 @@
   color: #555;
 }
 #admin-layout .region-container {
-  outline-left: 1px solid #ddd;
-  padding: 0 .5em .5em;
+  padding: 0 1em 0 0;
+}
+#admin-layout .region-container:last-child {
+  padding: 0;
+  border-right: 0;
 }
 #admin-layout .region-container-container {
-  outline: 1px solid #ddd;
-  margin: .5em 0 0;
+  margin: 0 0 .5em;
+  border-bottom: 1px solid #ccc;
+}
+#admin-layout .region-container-container .admin-region {
+  border-bottom: 0;
 }
 
 /* Admin-block css. This is the css used for blocks in the page manager.
@@ -57,15 +59,15 @@
 */
 .admin-block {
   display: inline-block;
-  min-height: 80px;
+  min-height: 60px;
   background: #EEECE6;
   margin: 0;
   padding: .5em;
-  outline: 1px solid #ccc;
+  outline: 4px solid #fff;
 }
 .admin-block h2 {
   font-size: 11px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 	
@@ -92,115 +94,23 @@
   display: none;
 }
 
-
-/* Prototype only throw-away css. This applies to the thumbnail_2.html and admin_layout.html demo files. */
-
-/* page */
-body {
-	font-size: 14px;
-	font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
-	color: #333;
-	padding: 2em;
-}
-
-
-/*  Layout [a representation of attributes that will be programmatically added to the region and block css.]
-	Applies to both layout and thumbnails since they both use percentage widths. */
-#header {
-	width: 100%;
-}
-#header_2 {
-	width: 100%;
-}
-#footer {
-	width: 100%;
-}
-#content {
-	width: 100%;
-}
-#content_2 {
-	width: 100%;
-}
-#content_3 {
-	width: 100%;
-}
-div#region-container-1 {
-	width: 100%;
-}
-div#region-container-2 {
-	width: 75%;
-	height: 100%;
-}
-div#region-container-3 {
-	width: 25%;	
-}
-div#region-container-2 .admin-region {
-	height: 100%;
-}
-div#region-container-3 .admin-region {
-	height: 100%;
-}
-
-/* blocks */
-#header .admin-block  {
-	width: 25%;
-}
-#content .admin-block,
-#content_2 .admin-block,
-#content_3 .admin-block {
-	width: 100%;
-}
-#footer .admin-block {
-	width: 50%;
-}
-
-/* thumbnails */
-div.admin-thumb .admin-region {
-	height: 20%;
-}
-div.admin-thumb .region-container {
-	height: 100%;
-}
-div.admin-thumb #region-container-3 {
-	height: 50%;
-}
-div.admin-thumb .region-container-container {
-	height: 40%;
-}
-
-@media all and (max-width: 800px) {
-    div#region-container-2,
-    div#region-container-3 {
-    	width: 50%;
-    }  
-
-@media all and (max-width: 600px) {
-	body {
-		padding: 1em;
-	}
-    div#region-container-2,
-    div#region-container-3, 
-    #header .admin-block,
-    #footer .admin-block  {
-    	width: 100%;
-    }
-}
-
-/* end prototype throwaway CSS */
-
-
 /* media queries */
 
 @media all and (max-width: 800px) {
   .admin-region, 
   #admin-layout {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media all and (max-width: 600px) {
   .region-container,
-  .region-container-container,
+  .region-container-container {
+  	width: 100%;
+    display: block;
+  }
   .admin-block {
     width: 100%;
     display: block;
