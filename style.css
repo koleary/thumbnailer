@@ -1,0 +1,135 @@
+
+
+/* General layout css. This CSS is shared by both the admin-layout and admin-thumb whic *can* also use the same markup. */
+#admin-layout div,
+.admin-thumb div {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox 28 and earlier*/
+}
+.admin-region, 
+.region-container,
+.region-container-container,
+#admin-layout,
+.admin-block,
+.admin-thumb {
+  float: left;
+}
+
+/* admin-layout css. This is the css used in the page manager. */
+#admin-layout {
+  width: 80%;
+  height: 510px;
+  border-top: 1px solid #ccc;
+}
+#admin-layout .admin-region {
+  padding: .5em 0;
+  min-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+#admin-layout .admin-region h1 { /* replace with attributes from the table head class */
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 .5em;
+  color: #777;
+}
+#admin-layout .admin-region p { /* replace with attributes from block UI */
+  font-size: 11px;
+  font-weight: normal;
+  margin: 0 0 .5em;
+  color: #555;
+}
+#admin-layout .region-container {
+  padding: 0 1em 0 0;
+}
+#admin-layout .region-container:last-child {
+  padding: 0;
+  border-right: 0;
+}
+#admin-layout .region-container-container {
+  margin: 0 0 .5em;
+  border-bottom: 1px solid #ccc;
+}
+#admin-layout .region-container-container .admin-region {
+  border-bottom: 0;
+}
+
+/* Admin-block css. This is the css used for blocks in the page manager.
+   Blocks and headings are hiddden in the thumbnails. 
+*/
+.admin-block {
+  display: inline-block;
+  min-height: 60px;
+  background: #EEECE6;
+  margin: 0;
+  padding: .5em;
+  outline: 4px solid #fff;
+}
+.admin-block h2 {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+}
+	
+
+/* layout thumbnail css. This is the CSS used in the layout chooser. */
+.admin-thumb-wrapper {
+  margin-right: 1em;
+  width: 100px;
+}
+.admin-thumb-wrapper h3 { /* use generic title class */
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 .5em;
+  color: #777;
+}
+.admin-thumb {
+  width: 100px;
+  height: 140px;
+  overflow: hidden;
+}
+.admin-thumb .admin-region {
+  background: #777;
+  outline: 3px solid #fff;
+  padding: 0;
+  margin: 0;
+  min-height: 3px;
+}
+.admin-thumb .region-container {
+  min-height: 3px;
+}
+.admin-thumb .admin-region h1,
+.admin-thumb .admin-block {
+  display: none;
+}
+
+/* media queries */
+
+@media all and (max-width: 800px) {
+  .admin-region, 
+  #admin-layout {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .region-container,
+  .region-container-container {
+  	width: 100%;
+    display: block;
+  }
+  .admin-block {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
