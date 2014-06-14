@@ -28,6 +28,7 @@ body {
 	Applies to both layout and thumbnails since they both use percentage widths. */
 #admin-layout {
   height: 510px;
+  clear: both;
 }
 #header {
 	width: 100%;
