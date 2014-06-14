@@ -29,6 +29,7 @@ body {
 #admin-layout {
   height: 510px;
   clear: both;
+  margin-top: 2em;
 }
 #header {
 	width: 100%;
