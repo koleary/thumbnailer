@@ -10,7 +10,7 @@
 <body>
   <div id="page">
 
-    <div id="container"> 
+    <div id="container">
 
     <div id="admin-layout">
         <div class="admin-region" id="header">
@@ -82,5 +82,48 @@
 
     </div>
   </div>
+  <code class="yml-example">
+  <h3>Example YML</h3>
+  <pre>
+complexlayout:
+label: Complex Layout
+category: Examples
+type: page
+theme: layout_example_complex
+regions:
+  header:
+    label: Header
+  header2:
+    label: Header 2
+  container-1:
+    label: Content-Wrapper
+    children:
+      container-2:
+        label: container 2
+        admin-width: 3/4
+        children:
+          content:
+            label: Content
+      container-3:
+        label: container 3
+        admin-width: 1/4
+        children:
+          content_2:
+            label: Content 2
+          content_3:
+            label: Content 3
+  footer-container:
+      label: Footer Container
+      children:
+         footer-1:
+           label: Footer 1
+           admin-width: 1/2
+         footer-2:
+           label: Footer 2
+           admin-width: 1/2
+
+	</pre>
+  </code>
+
 </body>
 </html>
