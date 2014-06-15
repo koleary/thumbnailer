@@ -1,11 +1,13 @@
-
+#page {
+	overflow: hidden;
+}
 /* General layout css. This CSS is shared by both the admin-layout and admin-thumb which *can* also use the same markup. */
 #admin-layout div,
 .admin-thumb div {
   box-sizing:border-box;
   -moz-box-sizing:border-box; /* Firefox 28 and earlier*/
 }
-.admin-region, 
+.admin-region,
 .region-container,
 .region-container-container,
 #admin-layout,
@@ -53,7 +55,7 @@
 }
 
 /* Admin-block css. This is the css used for blocks in the page manager.
-   Blocks and headings are hiddden in the thumbnails. 
+   Blocks and headings are hiddden in the thumbnails.
 */
 .admin-block {
   display: inline-block;
@@ -68,7 +70,7 @@
   font-weight: bold;
   margin: 0;
 }
-	
+
 /* layout thumbnail css. This is the CSS used in the layout chooser. */
 .admin-thumb-wrapper {
   margin-right: 1em;
@@ -103,7 +105,7 @@
 
 /* media queries */
 @media all and (max-width: 800px) {
-  .admin-region, 
+  .admin-region,
   #admin-layout {
     width: 100%;
     padding-right: 0;
@@ -124,7 +126,10 @@
 }
 
 
-
+.yml-example {
+	clear: both;
+	display: block;
+}
 
 
 
