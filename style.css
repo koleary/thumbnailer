@@ -19,14 +19,17 @@
 #admin-layout {
   width: 80%;
   height: 510px;
-  border-top: 1px solid #ccc;
 }
 #admin-layout .admin-region {
   padding: .5em 0;
   min-height: 50px;
   border-bottom: 1px solid #ccc;
 }
-#admin-layout .admin-region h1 { /* replace with attributes from the table head class */
+#admin-layout .admin-region:first-child {
+  border-top: 1px solid #ccc;
+}
+#admin-layout .admin-region-name,
+#admin-layout .admin-region-container-name { /* replace with attributes from the table head class */
   font-size: 11px;
   font-weight: normal;
   text-transform: uppercase;
@@ -45,6 +48,9 @@
 #admin-layout .region-container:last-child {
   padding: 0;
   border-right: 0;
+}
+#admin-layout .region-container .admin-region:first-child {
+  border-top: 1px solid #ccc;
 }
 #admin-layout .region-container-container {
   margin: 0 0 .5em;
