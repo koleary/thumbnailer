@@ -29,7 +29,6 @@ body {
 #admin-layout {
   height: 510px;
   clear: both;
-  margin-top: 2em;
 }
 #header {
 	width: 100%;
@@ -54,22 +53,14 @@ div#region-container-1 {
 }
 div#region-container-2 {
 	width: 70%;
-	height: 100%;
 }
 div#region-container-3 {
 	width: 30%;	
 	float: right;
 }
-div#region-container-2 .admin-region {
-	height: 250px;
+div#region-container-2 #content .admin-block {
+	height: 118px;
 }
-div#region-container-2 .admin-block {
-	height: 107px;
-}
-div#region-container-3 .admin-region {
-	height: 100%;
-}
-
 /* blocks */
 #header .admin-block  {
 	width: 25%;

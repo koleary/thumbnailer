@@ -1,46 +1,43 @@
 
 /* admin-layout css. This is the css used in the page manager when "view layout" is toggled on. */
-#admin-layout {
-  width: 100%;
-}
-#admin-layout .admin-region {
-  padding: .5em;
-  margin: 0;
-  background: #f8f7f5;
-  border-bottom: 1px solid #ccc;
-}
+
 #admin-layout .region-container {
-  padding: .5em;
+  padding: .4em .25em .25em;
   margin: 0;
 }
 #admin-layout .region-container-container {
-  padding: .5em;
-  margin: 0;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px dashed #ccc;
-  border-left: 1px dashed #ccc;
+  padding: .4em .25em .25em;
+  margin: .5em 0;
+  border: 1px dashed #ccc;
 }
 #admin-layout .region-container-container .region-container {
-  padding: .5em;
-  margin-top: 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  padding: .4em .25em .25em;
+  margin: 0;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
   border-left: 1px dashed #ccc;
 }
 #admin-layout .region-container-container .region-container:last-child {
   border-right: 1px dashed #ccc;
 }
-#admin-layout .region-container-container .admin-region {
-  border-top: 1px solid #ccc;
-}
-#admin-layout .region-container-container .admin-region:last-child {
-  border-bottom: 1px solid #ccc;
+#admin-layout .admin-region-name { 
+  color: #333;
+  min-height: 80px;
+  background: #E0E0D8;
+  margin: 0;
+  padding: .5em;
+  outline: 4px solid #fff;
 }
 .admin-block {
   display: none;
 }
 #admin-layout .admin-region .empty-region-message { 
   display: none;
+}
+#admin-layout .admin-region-container-name,
+#admin-layout .admin-region-name  {
+  display: block;
+  margin: 0 0 .5em;
 }
 
 @media all and (max-width: 600px) {
@@ -51,12 +48,11 @@
 
 
 /* prototype */
-.block-list-placeholder {
-  display: none;
+div#region-container-2 .admin-region-name {
+  height: 165px;
 }
-div#region-container-3 .admin-region {
-  height: 125px;
-}
+
+
 
 
 
